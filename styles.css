@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nerko+One&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {  
     font-family: Arial, sans-serif;
@@ -20,11 +25,7 @@ body {
 margin: 0px;
 align-items: center;
 }
-.navbar{
-  position: relative;
-  height: auto;
-  width: auto;
-}
+
 
 .first-page{
     position: relative;
@@ -41,12 +42,29 @@ align-items: center;
     height: auto;  
 }
 .first-page-content h1{
+  font-family: 'Fredoka One', sans-serif;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    color: white;
-    padding:20px;
+    padding-top: 20px;
+    color: #edebeb;
+    text-shadow:
+        -3px 0 red,  
+        3px 0 #00FFFF;  
+    letter-spacing: 3px;
 }
+.first-page-content h2{
+  font-family: "Poppins", sans-serif;
+    font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+      -3px 0 red,  
+      3px 0 #00FFFF;  
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
 .first-page-content h3{
     font-size: 30px;
     font-style: italic;
@@ -94,36 +112,44 @@ height: 80vh;
 .right-section {
     /* background-color: #f5f5f5; */
     width: 40%;
-    background-color: #f4f4f478;
+    height: auto;
+    background-color: #f4f4f400;
     align-items: center;
     border-radius: 20px;
     justify-content: center;
-    height: 78vh;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.right-section h1, .right-section h3{
+.right-section h1{
   text-align: right;
   margin: 0px;
-  font-size: 70px;
+  font-size: 50px;
   padding: 5px;
   margin-right: 20px;
   color: #181717;
 }
+.right-section p{
+  background-color: #fff;
+  font-size: 17px;
+  text-align: justify ;
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+align-items: flex-end;
 
+}
 .right-section .content {
     width: 100%;
-    height: auto;
+    background-color: #ffffff4c;
+    padding: 20px;
     font-size: 17px;
     text-align: justify;
-    max-width: 600px;
-    background-color: #fff;
-    line-height: 1.5;
-    padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    position: absolute;
-    bottom: 50px;
-    right: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
 
   }
 
@@ -173,7 +199,7 @@ height: 80vh;
 
 .third-page-content{
     position: relative;
-    height: 110vh;
+    height: 100vh;
     z-index: 1;    
     height: auto;
 }
@@ -184,8 +210,9 @@ height: 80vh;
     margin-top: 20px;
     position: inherit;
     height: auto;
-    color: #ddd;
-
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
 }
 .third-page-bottom{
   width: 100vh;
@@ -223,7 +250,7 @@ position: relative;
 
 
 .card{
-  width: 320px;
+  width: 270px;
    border-radius: 10px;
     border-color: bisque;
      background-color: #f1f1f1; 
@@ -231,7 +258,7 @@ position: relative;
 }
     .flip-card {
         background-color: black;
-        width: 320px;
+        width: 270px;
         /* border: 1px solid #f1f1f1; */
         perspective: 1000px; 
         height: auto;
@@ -256,6 +283,7 @@ position: relative;
         height: auto;
         -webkit-backface-visibility: hidden; 
         backface-visibility: hidden;
+        
     }
     
     .flip-card-front {
@@ -281,6 +309,43 @@ position: relative;
 
     }
     
+    .button-24 {
+      background: #FF4742;
+      border: 1px solid #FF4742;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      padding: 12px 14px;
+      text-align: center;
+      text-rendering: geometricprecision;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+    }
+    
+    .button-24:hover,
+    .button-24:active {
+      background-color: initial;
+      background-position: 0 0;
+      color: #FF4742;
+    }
+    
+    .button-24:active {
+      opacity: .5;
+    }
+
+
     /* CSS */
     .button-82-pushable {
       position: relative;
@@ -389,6 +454,12 @@ position: relative;
 
 /* ============ */
 
+.card-text{
+  font-family: Jost;
+}
+.modal-body{
+  font-family: "Manrope", sans-serif;
+}
 
 .design-section {
     display: flex;
@@ -430,6 +501,30 @@ position: relative;
     border-radius: 6px;
     text-align: justify;
   }
+
+
+  .timeline-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-empty {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-empty.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   
   .timeline-component {
     margin: 0px 20px 20px 20px;
@@ -469,7 +564,7 @@ position: relative;
 
 .divider{
 width: 100%;
-height: 100%;
+height: 5%;
 position: relative;
 background-color: #1f1f1f;
 }
@@ -479,7 +574,7 @@ background-color: #1f1f1f;
     position: relative;
     height: 100%;
     background-color: #1f1f1f;
-    height: auto;
+    height: 100vh;
 }
 
   .fourth-page-content{
@@ -488,13 +583,15 @@ background-color: #1f1f1f;
     z-index: 1;    
     height: 90vh;
     background-color: #1f1f1f8b;
+    height: auto;
 }
 
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 280px);
-    gap: 10px;
+    gap: 15px;
+
 }
 
 .grid-item {
