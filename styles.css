@@ -633,7 +633,7 @@ background-color: #1f1f1f;
     position: relative;
     height: 100%;
     background-color: #1f1f1f;
-    height: 100vh;
+    height: auto;
 }
 
   .fourth-page-content{
@@ -677,11 +677,9 @@ background-color: #1f1f1f;
 
 .large {
     grid-row: span 2;
-
   }
 
 .wide {
     grid-column: span 2;
-    object-fit: contain;
-
+    object-fit: contain;x 
 }
