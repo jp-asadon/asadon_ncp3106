@@ -33,7 +33,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        /* Some custom styles to beautify this example */
         .bs-example {
             margin: 60px 0;
         }
@@ -57,13 +56,13 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
     <div class="m-4">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="top: 0px; width: 100%;" id="navbar">
             <div class="container-fluid"
                 style="background-color: transparent; border-radius: 15px; height: 70px; width: 100%;">
-                <a href="#" class="navbar-brand">
+                <a class="navbar-brand">
                     <img src="1.png" height="70" alt="Home">
                 </a>
                 <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -71,18 +70,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="#AboutMe" class="nav-item nav-link active"
-                            style="font-size: 20px; font-weight: bold;">About Me
-                            <a href="#Education" class="nav-item nav-link"
-                                style="font-size: 20px; font-weight: bold;">Education</a>
-                            <a href="#TechnicalBackground" class="nav-item nav-link"
-                                style="font-size: 20px; font-weight: bold;">Skills</a>
-                            <a href="#Portfolio" class="nav-item nav-link" tabindex="-1"
-                                style="font-size: 20px; font-weight: bold;">Portfolio</a>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact"
-                                style="position: absolute; right: 0 ;font-size: 20px; font-weight: bold; background-color: hsl(345deg 100% 47%); border-radius: 12px;">
-                                Contact Me!
-                            </button>
+                        <a href="#AboutMe" class="nav-item nav-link" style="font-size: 20px; font-weight: bold;">About Me</a>
+                        <a href="#Education" class="nav-item nav-link" style="font-size: 20px; font-weight: bold;">Education</a>
+                        <a href="#TechnicalBackground" class="nav-item nav-link" style="font-size: 20px; font-weight: bold;">Skills</a>
+                        <a href="#Portfolio" class="nav-item nav-link" style="font-size: 20px; font-weight: bold;">Portfolio</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact"
+                            style="position: absolute; right: 0 ;font-size: 20px; font-weight: bold; background-color: hsl(345deg 100% 47%); border-radius: 12px; border-color: black;">
+                            Contact Me!
+                        </button>
                     </div>
                 </div>
             </div>
@@ -125,8 +120,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="modal fade" id="softskills" tabindex="-1" role="dialog" aria-labelledby="softskillsCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -235,7 +228,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="modal fade" id="python" tabindex="-1" role="dialog" aria-labelledby="pythonTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -393,8 +385,8 @@
                             <a href="https://github.com/jp-asadon/asadon_ncp3102"
                                 target="_blank">
                                 Github Repository</a><br>
-                            <a href="https://github.com/jp-asadon/asadon_ncp1102" target="_blank">
-                                Gallery</a>
+                            <!-- <a href="https://github.com/jp-asadon/asadon_ncp1102" target="_blank">
+                                Gallery</a> -->
                         </center>
                     </p>
                 </div>
@@ -454,43 +446,21 @@
             </div>
         </div>
     </div>
-
-
-
-    <!-- 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
-      </div> -->
-
-
-    <div class="first-page" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <div class="first-page" id="AboutMe">
         <div class="first-page-content">
-            <h1 id="AboutMe">
+            <h1 >
                 | CpE Student |
             </h1>
             <h3>Aspiring IT Professional</h3>
             <center>
                 <hr>
             </center>
-
-
             <div class="sections-container">
-
                 <div class="left-section">
                     <div class="content">
                         <center><img class="homepic" src="homepic.png"></center>
                     </div>
                 </div>
-
                 <div class="right-section">
                     <h2>JOHN PAUL ASADON</h2>
                     <div class="content">
@@ -500,23 +470,16 @@
                         tackle challenges efficiently and innovate continuously. </p>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
-
-
-
     </div>
 
-    <div class="second-page" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <div class="second-page"  id="Education">
         <div class="second-page-content">
-            <h1 id="Education">Education</h1>
+            <h1>Education</h1>
             <center>
                 <hr>
             </center>
-
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
             </style>
@@ -554,7 +517,6 @@
                                 pursued the STEM strand. This period solidified my interest in technology and motivated
                                 me to study a
                                 program in this field.
-
                             </p>
                         </div>
                         <div class="timeline-middle">
@@ -582,20 +544,16 @@
                                 in various aspects of technology,
                                 such as programming, web and system deveopment, data engineering, and network
                                 configuration.
-
                             </p>
                         </div>
-
                     </div>
                 </section>
             </center>
         </div>
     </div>
-
-
-    <div class="third-page" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <div class="third-page" id="TechnicalBackground">
         <div class="third-page-content">
-            <h1 id="TechnicalBackground">Technical Background</h1>
+            <h1>Technical Background</h1>
             <center>
                 <hr>
             </center>
@@ -622,41 +580,18 @@
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-
                                         <div class="card">
                                             <img src="skills.png" class="card-img-top" alt="...">
                                             <h5 class="card-title"
                                                 style="margin: 5px; background-color: black; padding: 5px;">SKILLS</h5>
-
                                             <div class="card-body text-center">
-
                                                 <p class="card-text" style="text-align: justify; color: black;">
-
                                                     I am very adaptable and possess a diverse range of skills that make
                                                     me effective in various roles. To explore my skill set, click
                                                     the buttons below to learn more about my technical and soft skills.
-
                                                 </p>
-                                                <!-- <a href="https://www.ue.edu.ph/mla/" target="_blank"
-                                                    class="dropdown-item" data-bs-toggle="tooltip"
-                                                    style="margin: 5px; width: 280px; background-color: aqua; border-radius: 12px;"
-                                                    title="Python
-                                                A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">View
-                                                    Certifications</a> -->
-                                                <!-- <button type="button" class="button-24" role="button" data-toggle="modal"
-                                                    data-target="#softskills"
-                                                    style="margin: 5px; width: 150px; background-color: #FE2C55; border-radius: 12px; border-color: #25F4EE; border-width: 5px;
-                                                    font-size: 13px; color: #000000; font-weight: bold;">
-                                                    Soft Skills
-                                                </button> -->
                                                 <button class="button-24" role="button" data-toggle="modal"
                                                 data-target="#softskills" style="width: 170px; margin-bottom: 5px; margin-left: 25px;">Soft Skills</button>
-
-                                                <!-- <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#technicalskills"
-                                                    style="margin: 5px; width: 150px; background-color: aqua; border-radius: 12px;">
-                                                    Technical Skills
-                                                </button> -->
                                                 <button class="button-24" role="button" data-toggle="modal"
                                                 data-target="#technicalskills" style="width: 170px; margin-bottom: 5px; margin-left: 25px;">Technical Skills</button>
                                             </div>
@@ -664,11 +599,8 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="col-md-4">
-
                             <div class="flip-card">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -692,9 +624,7 @@
                                             <h5 class="card-title"
                                                 style="margin: 5px; background-color: black; padding: 5px;">SEMINARS
                                                 ATTENDED</h5>
-
                                             <div class="card-body text-center">
-
                                                 <p class="card-text" style="text-align: justify; color: black;">
                                                     I have attended several seminars to help me broaden my view on various technologies and trends in the industry
                                                     , as well as to improve and learn new skills from IT professionals. 
@@ -702,8 +632,7 @@
                                                 <a href="https://drive.google.com/file/d/1CTV5skQZKtlLg93pIaFX39ljfA2SzEkn/view?usp=drive_link" target="_blank">
                                                     <button class="button-24" role="button"
                                                     style="width: max-content; margin-bottom: 5px; margin-left: 21px">View Certifications</button>
-                                                </a>
-                                                
+                                                </a>     
                                                 <!-- <a href="https://www.ue.edu.ph/mla/" target="_blank"
                                                     class="dropdown-item" data-bs-toggle="tooltip"
                                                     style="margin: 5px; width: 280px; background-color: aqua; border-radius: 12px;"
@@ -795,31 +724,31 @@
 
     <div class="divider"><br>
     </div>
-    <div class="fourth-page" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
-        <div class="fourth-page-content" id="Portfolio">
+    <div class="fourth-page" id="Portfolio">
+        <div class="fourth-page-content">
             <h1>Portfolio</h1>
             <center>
                 <hr>
             </center>
             <div class="grid-container">
                 <div class="grid-item" data-toggle="modal" data-target="#python"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip.">
+                    title="Click to view Python-Based Projects.">
                     <img src="python.png" alt="Python Logo">
                 </div>
                 <div class="grid-item" data-toggle="modal" data-target="#javakotlin"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip."><img
+                    title="Click to view Java and Kotlin-Based Projects."><img
                         src="javakotlin.png" alt="Java Kotlin Logo"></div>
                 <div class="grid-item" data-toggle="modal" data-target="#power"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip."><img
+                    title="Click to view Microsoft Power Platform-Based Projects"><img
                         src="power.png" alt="PowerApps PowerAutomate Logo"></div>
                 <div class="grid-item" data-toggle="modal" data-target="#html"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip."><img
+                    title="Click to view Web Development Projects."><img
                         src="html.png" alt="HTML CSS JS Logo"></div>
                 <div class="grid-item" data-toggle="modal" data-target="#arduino"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip."><img
+                    title="Click to view C++ Based Arduino Projects"><img
                         src="arduino.png" alt="Others"></div>
                 <div class="grid-item" data-toggle="modal" data-target="#others"
-                    title="A much longer tooltip to demonstrate the max-width of the Bootstrap tooltip."><img
+                    title="Click to view more projects and portfolio"><img
                         src="others.png" alt="Others"></div>
             </div>
         </div>
@@ -830,12 +759,11 @@
         <footer class="bg-body-tertiary text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.92); font-size: 20px;">
-                © 2024 John Paul Asadon. All Rights Reserved
+                © 2024 John Paul Asadon. All Rights Reserved.
                 <!-- <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
             </div>
             <!-- Copyright -->
         </footer>
-
     </div>
 
 
@@ -853,5 +781,4 @@
         crossorigin="anonymous"></script>
         <script src="script.js"></script> 
 </body>
-
 </html>
